@@ -6,7 +6,7 @@ In this project, we compared two networks, RESNET and GoogleNet. The following p
 
 And the following picture shows the overall structure of GoogleNet：
 
-![GoogleNet](https://raw.githubusercontent.com/fujunpeng/machine_learning_and_transportation_2020_project2/main/resnet34/GoogleNet.png)
+![GoogleNet](https://raw.githubusercontent.com/fujunpeng/machine_learning_and_transportation_2020_project2/main/figure/GoogleNet.png)
 
 
 
