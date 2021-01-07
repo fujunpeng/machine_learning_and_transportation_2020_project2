@@ -1,10 +1,16 @@
 # Machine Learning and Transportation
 The purpose of this project is image classification.  
-All folder names and file names in the project should not be changed.The folder data_set is the directory used to store the training samples, and it should be placed in the C:/Users. 
-This project is using Resnet for image classification.The following picture shows the main structure of ALL ResNets：  
+All folder names and file names in the project should not be changed. The folder data_set is the directory used to store the training samples, and it should be placed in the C:/Users. 
+In this project, we compared two networks, RESNET and GoogleNet. The following picture shows the main structure of ALL ResNets：  
 ![RESNET](https://raw.githubusercontent.com/fujunpeng/machine_learning_and_transportation_2020_project2/main/resnet34/RESNET.png)   
 
-The steps for using data_set are as follows:
+And the following picture shows the overall structure of GoogleNet：
+
+![GoogleNet](https://raw.githubusercontent.com/fujunpeng/machine_learning_and_transportation_2020_project2/main/resnet34/GoogleNet.png)
+
+
+
+The steps for using data_set of RESNET are as follows:
 ------------------------
 (1)Create a new folder "flower_data" under the data_set folder;  
 (2)Click on the link to download the flower classification dataset:(http://download.tensorflow.org/example_images/flower_photos.tgz)；  
@@ -38,13 +44,25 @@ if self.downsample is not None， identity = self.downsample(x). 【"dashed" res
 
 Complete the forward propagation process based on the picture of the basic block.
 
-At last, we chose one picture of tulip from the network to test the performance of RESNET. 
+For RESNET, the results of the three rounds of iterations are shown in the following figure:
+
+![resnet iterations](https://raw.githubusercontent.com/fujunpeng/machine_learning_and_transportation_2020_project2/main/figure/resnet%20iterations.png)
+
+For GoogleNet, the results of the 30 rounds of iterations are shown in the following figure:
+
+![googlenet iterations](https://raw.githubusercontent.com/fujunpeng/machine_learning_and_transportation_2020_project2/main/figure/googlenet%20iterations.png)
+
+The comparison shows that the results of RESNET after three iterations are comparable to the results of GoogleNet after 30 iterations. Therefore, we choose RESNET.
+
+At last, we chose one picture of tulip from the network to test the performance of RESNET and GoogleNet.
 
 ![tulip](https://raw.githubusercontent.com/fujunpeng/machine_learning_and_transportation_2020_project2/main/resnet34/tulip.jpg)
 
-The result show that the model thought it had 99.98% probability to be tulips. It means RESNET has good performance in image classification.
+The result show that the RESNET thought it had 99.98 possibility to be tulip and GooglNet believes it has a 99.83% chance of being a tulip.
 
-We have visualized the results.
+ It means RESNET has good performance in image classification.
+
+We also visualized the results of RESNET.
 
 The following figure shows how to access the visualization interface:
 
